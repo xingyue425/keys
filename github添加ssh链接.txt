@@ -1,0 +1,14 @@
+1.打开Git Bash
+2.git config --global user.name "你的名字"
+git config --global user.email“你的邮箱"
+3.删除.SSH文件下的known_hosts(.SSH在C:\Users\Windows用户名目录下)
+4.ssh-keygen -t rsa -C "你的名字/你的邮箱"
+5.然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，用记事本打开id_rsa.pub，将里面的内容复制添加到github设置
+6.在Git中输入ssh -T git@github.com验证与github连接是否成功
+
+
+其实无论是使用putty生成的密钥对还是git自己生成的密钥对，只需要把公钥内容添加到git当中，然后利用putty将私钥转化成ppk文件就好了，
+tortoiseGit直接使用这个ppk文件就可以了。
+
+
+另外如果load ppk那个如果是灰色的，则需要设置tortoiseGit Setting中的SSHClient为TortoiseGitPlink.exe就好了
