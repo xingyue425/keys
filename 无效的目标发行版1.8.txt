@@ -1,0 +1,11 @@
+检查如下内容
+1.File->project Structure中  project栏目的project SDK以及language level.Modules中的Sources的language level以及Dependenices的Module SDK
+2.Run->Edit configurations->maven下面的jre
+3.检查java -v  以及mvn -v看看是不是正确的
+4.maven安装目录conf下面的settings.xml
+<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.target>1.8</maven.compiler.target>
+<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+5.项目本身的pom.xml
+maven-compiler-plugin插件配置是不是正确的
+6.settings->Build Execution....->Build Tools->maven->runner
