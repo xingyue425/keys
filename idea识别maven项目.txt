@@ -1,0 +1,1 @@
+首先选择idea右侧的maven project面板，然后选择上面的加号选择对应项目的pom.xml,这样就可以识别了
